@@ -245,8 +245,6 @@ function Getbody() {
                 YouthBodys = YouthBody + "&" + bodyVal;
                 $.setdata(YouthBodys, 'youth_autoread');
 				
-				var fs = require("fs");
-				YouthBodys = fs.wirteFileSync("zq_time.txt",YouthBodys);
 				
 				
                 $.log(`${$.name}获取阅读: 成功, YouthBodys: ${bodyVal}`);
